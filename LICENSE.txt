@@ -1,0 +1,16 @@
+Data Anonymizer — Proprietary License Notice
+
+Copyright (c) MagicByte Consulting.
+All rights reserved.
+
+This repository contains distribution artifacts and documentation for the “Data Anonymizer” product.
+The product is proprietary software owned by MagicByte Consulting.
+
+Source code is not provided in this repository.
+
+Use of the software is governed by the applicable End User License Agreement (EULA) and/or
+commercial agreement provided by MagicByte Consulting.
+
+You may not copy, modify, reverse engineer, decompile, disassemble, or redistribute the software
+except as expressly permitted by the applicable agreement.
+

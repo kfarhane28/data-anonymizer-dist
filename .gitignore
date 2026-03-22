@@ -1,0 +1,11 @@
+.DS_Store
+Thumbs.db
+
+# Python caches (scripts only)
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+.venv-*/
+

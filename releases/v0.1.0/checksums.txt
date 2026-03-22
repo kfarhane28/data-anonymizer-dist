@@ -1,0 +1,7 @@
+# SHA-256 checksums
+#
+# Format:
+# <sha256>  <filename>
+#
+# Example:
+0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef  data_anonymizer-0.1.0-py3-none-any.whl
