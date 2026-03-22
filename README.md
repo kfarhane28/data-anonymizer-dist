@@ -31,9 +31,23 @@ Typical differences:
 - **Pro**: advanced rule actions, **parallel** processing, UI preview mode, sensitive-data profiling, and improved
   cancellation behavior for long runs.
 
+## Current public version
+
+The first supported public release in this distribution repository is **v1.0.0**.
+
+## Free edition workload limits
+
+Free is designed for evaluation and light workloads:
+- Single file: up to **10 MB**
+- Archives: up to **50 MB** (compressed)
+- Extracted archive content: up to **200 MB** total
+- Extracted files: up to **200 files**
+
+Pro supports larger operational datasets and support bundles (limits removed).
+
 ## Repository layout
 
-- `releases/` — versioned folders (e.g. `releases/v0.1.0/`) containing:
+- `releases/` — versioned folders (e.g. `releases/v1.0.0/`) containing:
   - wheel (`.whl`)
   - `checksums.txt` (SHA-256)
   - `user_guide.pdf`, `admin_guide.pdf`
@@ -51,27 +65,27 @@ For details, see `CHANGELOG.md`.
 
 ## Download and verify
 
-1. Choose a version folder under `releases/` (example: `releases/v0.1.0/`).
+1. Choose a version folder under `releases/` (example: `releases/v1.0.0/`).
 2. Download the wheel and the PDF guides.
 3. Verify integrity using the SHA-256 checksum in `checksums.txt`.
 
 Example (macOS / Linux):
 
 ```bash
-cd releases/v0.1.0
-shasum -a 256 data_anonymizer-0.1.0-py3-none-any.whl
+cd releases/v1.0.0
+shasum -a 256 data_anonymizer-1.0.0-py3-none-any.whl
 ```
 
 Example (Linux alternative):
 
 ```bash
-sha256sum data_anonymizer-0.1.0-py3-none-any.whl
+sha256sum data_anonymizer-1.0.0-py3-none-any.whl
 ```
 
 Example (Windows PowerShell):
 
 ```powershell
-Get-FileHash .\data_anonymizer-0.1.0-py3-none-any.whl -Algorithm SHA256
+Get-FileHash .\data_anonymizer-1.0.0-py3-none-any.whl -Algorithm SHA256
 ```
 
 Compare the computed hash with the corresponding line in `checksums.txt`.
@@ -86,7 +100,7 @@ For websites that need to fetch structured metadata, use:
 - Release manifest (JSON): `releases/manifest.json`
 
 Version-specific URLs remain stable and predictable:
-- `releases/vX.Y.Z/` (example: `releases/v0.1.0/`)
+- `releases/vX.Y.Z/` (example: `releases/v1.0.0/`)
 
 ## Install (wheel)
 
@@ -94,7 +108,7 @@ Version-specific URLs remain stable and predictable:
 python3 -m venv .venv
 source .venv/bin/activate
 
-pip install ./releases/v0.1.0/data_anonymizer-0.1.0-py3-none-any.whl
+pip install ./releases/v1.0.0/data_anonymizer-1.0.0-py3-none-any.whl
 
 data-anonymizer --help
 ```

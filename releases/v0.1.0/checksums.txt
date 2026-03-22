@@ -1,3 +1,0 @@
-df83dbeb36924b710a6cff7a2dff57d2fd8a6c7085af0a77755158e0bdb27d99  data_anonymizer-0.1.0-py3-none-any.whl
-dbaa86cbfeae949fe787ae876c21aa6f5d995178c56619eafa48fd4b9ee5ea4f  user_guide.pdf
-cdfa129ded596964def33c3bbca0feb44ff5bf36d77f155dc24091edc7f46b6c  admin_guide.pdf
