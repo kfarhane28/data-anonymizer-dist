@@ -29,7 +29,6 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-          cache: "pip"
 
       - name: Install PDF dependency
         run: |
@@ -85,4 +84,3 @@ jobs:
           git add releases docs CHANGELOG.md
           git commit -m "docs: prepare v${{ steps.detect.outputs.version }}"
           git push
-
