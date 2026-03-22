@@ -6,6 +6,8 @@ on:
     paths:
       - "releases/v*/**"
       - "CHANGELOG.md"
+      - ".github/workflows/release-prep.yml"
+      - "scripts/prepare_release.py"
   workflow_dispatch:
     inputs:
       version:
