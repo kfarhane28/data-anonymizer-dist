@@ -7,6 +7,12 @@ and this project aims to follow [Semantic Versioning](https://semver.org/spec/v2
 
 ## [Unreleased]
 
+## [1.0.0] - 2026-03-22
+
+### Added
+- Free edition workload limits with explicit, actionable error messages (10 MB single file; 50 MB archive compressed; 200 MB extracted total; 200 extracted files).
+- Updated User/Admin documentation to describe limits, measurement, and exceed behavior.
+
 ## [0.1.0] - 2026-03-21
 
 ### Added
