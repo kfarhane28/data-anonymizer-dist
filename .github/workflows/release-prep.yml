@@ -27,6 +27,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - uses: actions/setup-python@v5
         with:
@@ -37,41 +39,15 @@ jobs:
           python -m pip install -U pip
           python -m pip install reportlab
 
-      - name: Detect release version (if not provided)
-        id: detect
+      - name: Prepare release (checksums/latest/manifest + changelog PDF)
         shell: bash
         run: |
           set -euo pipefail
-          VERSION_INPUT="${{ inputs.version }}"
-          if [[ -n "${VERSION_INPUT}" ]]; then
-            echo "version=${VERSION_INPUT}" >> "$GITHUB_OUTPUT"
-            exit 0
+          args=(--root . --generate-changelog-pdf)
+          if [[ -n "${{ inputs.version }}" ]]; then
+            args+=(--version "${{ inputs.version }}")
           fi
-
-          # Try to infer from changed paths first (push event).
-          if [[ "${{ github.event_name }}" == "push" ]]; then
-            CHANGED="$(git diff --name-only "${{ github.event.before }}" "${{ github.sha }}" || true)"
-            VERS="$(echo "$CHANGED" | sed -n 's#^releases/v\\([0-9][0-9.]*\\)/.*#\\1#p' | sort -u)"
-            if [[ -n "$VERS" ]]; then
-              echo "version=$(echo "$VERS" | tail -n 1)" >> "$GITHUB_OUTPUT"
-              exit 0
-            fi
-          fi
-
-          # Fallback: newest version folder.
-          V="$(ls -1 releases 2>/dev/null | sed -n 's/^v\\([0-9][0-9.]*\\)$/\\1/p' | sort -V | tail -n 1)"
-          if [[ -z "$V" ]]; then
-            echo "Could not detect a release version under releases/vX.Y.Z" >&2
-            exit 1
-          fi
-          echo "version=$V" >> "$GITHUB_OUTPUT"
-
-      - name: Prepare release (checksums/latest/manifest + changelog PDF)
-        run: |
-          python scripts/prepare_release.py \
-            --root . \
-            --version "${{ steps.detect.outputs.version }}" \
-            --generate-changelog-pdf
+          python scripts/prepare_release.py "${args[@]}"
 
       - name: Commit updated release metadata
         shell: bash
@@ -84,5 +60,10 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add releases docs CHANGELOG.md
-          git commit -m "docs: prepare v${{ steps.detect.outputs.version }}"
+          v="$(cat releases/latest/VERSION 2>/dev/null || true)"
+          if [[ -n "$v" ]]; then
+            git commit -m "docs: prepare v${v}"
+          else
+            git commit -m "docs: prepare distribution metadata"
+          fi
           git push
