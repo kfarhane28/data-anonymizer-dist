@@ -1,20 +1,21 @@
-# Data Anonymizer Free Edition — v1.0.0
+# Data Anonymizer Free Edition — v1.1.0
 
-Release date: 2026-03-22
+Release date: 2026-03-29
 
 ## Summary
 
-v1.0.0 is the **first supported public distribution** of Data Anonymizer (Free edition).
+v1.1.0 focuses on a clearer anonymization preview experience and introduces optional distribution hardening artifacts.
 
 ## What changed
 
-- Free edition workload limits are enforced (single file, archive compressed size, extracted total size, extracted file count).
-- Documentation updated to describe limits, measurement, and behavior when a limit is exceeded.
+- Anonymization preview: highlighted output to clearly show which segments were transformed.
+- Optional build hardening: wheel obfuscation step (local variable renaming) before generating the wheel.
+- Optional Nuitka bundle: OS-specific binary archive for easier distribution in restricted environments.
 
 ## What’s included
 
-- Installable Python wheel (`data_anonymizer-1.0.0-py3-none-any.whl`)
-- SHA-256 checksums (`checksums.txt`)
+- Installable Python wheel (`data_anonymizer-1.1.0-py3-none-any.whl`)
+- Optional Nuitka bundle (`data-anonymizer-1.1.0-nuitka-linux-x86_64.tar.gz`)
 - Documentation PDFs:
   - `user_guide.pdf`
   - `admin_guide.pdf`
