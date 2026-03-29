@@ -113,6 +113,12 @@ pip install ./releases/v1.0.0/data_anonymizer-1.0.0-py3-none-any.whl
 data-anonymizer --help
 ```
 
+## Optional: Nuitka bundle (binary)
+
+Some releases also ship an OS-specific Nuitka bundle (`data-anonymizer-<version>-nuitka-<os>-<arch>.tar.gz`).
+
+Install instructions: `docs/INSTALL_NUITKA_BUNDLE.md`.
+
 ## Documentation
 
 Local copies:
