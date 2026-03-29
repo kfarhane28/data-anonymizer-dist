@@ -7,6 +7,13 @@ and this project aims to follow [Semantic Versioning](https://semver.org/spec/v2
 
 ## [Unreleased]
 
+## [1.1.0] - 2026-03-29
+
+### Added
+- Anonymization preview: highlighted output to clearly show which segments were transformed.
+- Optional build hardening during packaging: wheel obfuscation step (local variable renaming).
+- Optional Nuitka binary bundle artifact for restricted environments.
+
 ## [1.0.0] - 2026-03-22
 
 ### Added
