@@ -21,18 +21,6 @@
   },
   "versions": [
     {
-      "version": "1.0.0",
-      "date": "2026-03-22",
-      "path": "releases/v1.0.0",
-      "files": {
-        "wheel": "releases/v1.0.0/data_anonymizer-1.0.0-py3-none-any.whl",
-        "checksums": "releases/v1.0.0/checksums.txt",
-        "user_guide": "releases/v1.0.0/user_guide.pdf",
-        "admin_guide": "releases/v1.0.0/admin_guide.pdf",
-        "release_notes": "releases/v1.0.0/release_notes.md"
-      }
-    },
-    {
       "version": "1.1.0",
       "date": "2026-03-29",
       "path": "releases/v1.1.0",

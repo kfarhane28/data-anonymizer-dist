@@ -33,7 +33,7 @@ Typical differences:
 
 ## Current public version
 
-The first supported public release in this distribution repository is **v1.0.0**.
+The current supported public release in this distribution repository is **v1.1.0**.
 
 ## Free edition workload limits
 
@@ -108,7 +108,9 @@ Version-specific URLs remain stable and predictable:
 python3 -m venv .venv
 source .venv/bin/activate
 
-pip install ./releases/v1.0.0/data_anonymizer-1.0.0-py3-none-any.whl
+# Prefer the "latest" channel for stable URLs.
+VERSION="$(cat ./releases/latest/VERSION)"
+pip install "./releases/latest/data_anonymizer-${VERSION}-py3-none-any.whl"
 
 data-anonymizer --help
 ```
