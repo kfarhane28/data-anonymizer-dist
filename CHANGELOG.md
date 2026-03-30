@@ -7,6 +7,15 @@ and this project aims to follow [Semantic Versioning](https://semver.org/spec/v2
 
 ## [Unreleased]
 
+## [1.2.0] - 2026-03-30
+
+### Added
+- Streamlit UI: show the tool version in the sidebar footer.
+- Sensitive-data profiling: suggested rules are now emitted as rules v2 (action-based) and aligned with masked examples.
+
+### Changed
+- Anonymization preview (highlighted): render one log line per row (no concatenation), with better wrapping for long lines.
+
 ## [1.1.0] - 2026-03-29
 
 ### Added
