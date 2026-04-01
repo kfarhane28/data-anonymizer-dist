@@ -1,7 +1,7 @@
 {
   "product": "data-anonymizer",
   "edition": "free",
-  "latest": "2.3.0",
+  "latest": "2.3.1",
   "docs": {
     "user_guide_latest": "docs/user_guide_latest.pdf",
     "admin_guide_latest": "docs/admin_guide_latest.pdf"
@@ -11,7 +11,7 @@
       "path": "releases/latest",
       "version_file": "releases/latest/VERSION",
       "files": {
-        "wheel": "releases/latest/data_anonymizer-2.3.0-py3-none-any.whl",
+        "wheel": "releases/latest/data_anonymizer-2.3.1-py3-none-any.whl",
         "checksums": "releases/latest/checksums.txt",
         "user_guide": "releases/latest/user_guide.pdf",
         "admin_guide": "releases/latest/admin_guide.pdf",
@@ -54,6 +54,18 @@
         "user_guide": "releases/v2.3.0/user_guide.pdf",
         "admin_guide": "releases/v2.3.0/admin_guide.pdf",
         "release_notes": "releases/v2.3.0/release_notes.md"
+      }
+    },
+    {
+      "version": "2.3.1",
+      "date": "2026-04-02",
+      "path": "releases/v2.3.1",
+      "files": {
+        "wheel": "releases/v2.3.1/data_anonymizer-2.3.1-py3-none-any.whl",
+        "checksums": "releases/v2.3.1/checksums.txt",
+        "user_guide": "releases/v2.3.1/user_guide.pdf",
+        "admin_guide": "releases/v2.3.1/admin_guide.pdf",
+        "release_notes": "releases/v2.3.1/release_notes.md"
       }
     }
   ]

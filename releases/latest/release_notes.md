@@ -1,22 +1,21 @@
-# Data Anonymizer Free Edition — v2.3.0
+# Data Anonymizer Free Edition — v2.3.1
 
-Release date: 2026-04-01
+Release date: 2026-04-02
 
 ## Summary
 
-v2.3.0 improves rule control and evaluation order with per-rule priority, and refreshes the Streamlit rules editor UX to support it.
+v2.3.1 is a patch release focused on UI polish and branding updates.
 
 ## What changed
 
-- Rules: add optional `priority: <int>` to control rule precedence (higher priority evaluated first; ties keep file order).
-- Streamlit UI: rules editor supports `priority` and keeps the column at the end of the table.
-- Streamlit UI: PDF mode button layout fix (avoid clipping “Run PDF redaction”).
-- Website: update plan comparison / features messaging for per-rule enable/disable and rule priority.
+- Streamlit UI: refreshed logo assets and updated sidebar footer branding.
+- Streamlit UI: improved action button sizing/alignment (consistent padding and centered labels).
+- Website: updated branding assets and site metadata to reflect DataPrivix.
 
 ## What’s included
 
-- Installable Python wheel (`data_anonymizer-2.3.0-py3-none-any.whl`)
-- Optional Nuitka bundle (`data-anonymizer-2.3.0-nuitka-linux-x86_64.tar.gz`)
+- Installable Python wheel (`data_anonymizer-2.3.1-py3-none-any.whl`)
+- Optional Nuitka bundle (`data-anonymizer-2.3.1-nuitka-linux-x86_64.tar.gz`)
 - Documentation PDFs:
   - `user_guide.pdf`
   - `admin_guide.pdf`
@@ -26,4 +25,3 @@ v2.3.0 improves rule control and evaluation order with per-rule priority, and re
 
 - This repository is **distribution-only**. It does not include product source code.
 - Pro/Enterprise editions are available under commercial terms from MagicByte Consulting.
-
