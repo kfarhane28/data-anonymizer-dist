@@ -1,7 +1,7 @@
 {
   "product": "data-anonymizer",
   "edition": "free",
-  "latest": "2.3.2",
+  "latest": "2.3.3",
   "docs": {
     "user_guide_latest": "docs/user_guide_latest.pdf",
     "admin_guide_latest": "docs/admin_guide_latest.pdf"
@@ -11,7 +11,7 @@
       "path": "releases/latest",
       "version_file": "releases/latest/VERSION",
       "files": {
-        "wheel": "releases/latest/data_privix-2.3.2-py3-none-any.whl",
+        "wheel": "releases/latest/data_privix-2.3.3-py3-none-any.whl",
         "checksums": "releases/latest/checksums.txt",
         "user_guide": "releases/latest/user_guide.pdf",
         "admin_guide": "releases/latest/admin_guide.pdf",
@@ -78,6 +78,18 @@
         "user_guide": "releases/v2.3.2/user_guide.pdf",
         "admin_guide": "releases/v2.3.2/admin_guide.pdf",
         "release_notes": "releases/v2.3.2/release_notes.md"
+      }
+    },
+    {
+      "version": "2.3.3",
+      "date": "2026-04-02",
+      "path": "releases/v2.3.3",
+      "files": {
+        "wheel": "releases/v2.3.3/data_privix-2.3.3-py3-none-any.whl",
+        "checksums": "releases/v2.3.3/checksums.txt",
+        "user_guide": "releases/v2.3.3/user_guide.pdf",
+        "admin_guide": "releases/v2.3.3/admin_guide.pdf",
+        "release_notes": "releases/v2.3.3/release_notes.md"
       }
     }
   ]
