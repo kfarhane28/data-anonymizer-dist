@@ -1,21 +1,21 @@
-# Data Anonymizer Free Edition — v2.3.1
+# Data Privix Free Edition — v2.3.2
 
 Release date: 2026-04-02
 
 ## Summary
 
-v2.3.1 is a patch release focused on UI polish and branding updates.
+v2.3.2 is a patch release that improves the marketing website with a clear “How it works” workflow animation and fixes iOS/Safari SVG animation positioning for a cleaner, more consistent render.
 
 ## What changed
 
-- Streamlit UI: refreshed logo assets and updated sidebar footer branding.
-- Streamlit UI: improved action button sizing/alignment (consistent padding and centered labels).
-- Website: updated branding assets and site metadata to reflect DataPrivix.
+- Website: add a lightweight workflow animation (raw sources → DataPrivix Engine → cleaned output) and feature it prominently on the homepage.
+- Website/SVG animation: improve iOS/Safari rendering so animated transforms do not override SVG positioning (prevents overlapping / misaligned blocks).
+- CI/Release: fix the Nuitka smoke test to validate the correct binary name (`data-privix`).
 
 ## What’s included
 
-- Installable Python wheel (`data_anonymizer-2.3.1-py3-none-any.whl`)
-- Optional Nuitka bundle (`data-anonymizer-2.3.1-nuitka-linux-x86_64.tar.gz`)
+- Installable Python wheel (`data_privix-2.3.2-py3-none-any.whl`)
+- Optional Nuitka bundle (`data-privix-2.3.2-nuitka-linux-x86_64.tar.gz`)
 - Documentation PDFs:
   - `user_guide.pdf`
   - `admin_guide.pdf`
